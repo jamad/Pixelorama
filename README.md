@@ -15,7 +15,8 @@
 * `scons --version` to check scons
 * `scons platform=windows target=editor vsproj=yes verbose=yes`
 * opened `godot-4.3\godot-4.3\godot.sln`
-* 
+* ![image](https://github.com/user-attachments/assets/d4d30e42-8b0d-464f-ae33-bea145d8320f)
+
 
 ```mermaid
 
