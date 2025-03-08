@@ -32,7 +32,9 @@
 
 graph LR
 
-godot-4.3.zip -- extracted --> godot-4.3 --> scons_command -->  godot.sln --> visualstudio2022 
+godot-4.3.zip -- extracted --> godot-4.3 --> scons_command -->  godot.sln --> visualstudio2022 -->"godot-4.3\bin\godot.windows.editor.x86_64.exe"
 scons["install scons by <br>pip install scons"] --> scons_command
+
+project.godot-->
 
 ```
