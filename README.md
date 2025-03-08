@@ -6,3 +6,5 @@
 * then its UI was visible in 2D panel
 * ![image](https://github.com/user-attachments/assets/baf82b73-e359-41ce-b160-7508fe8cb173)
 
+* first run but got a problem
+* ![image](https://github.com/user-attachments/assets/0d00ea8f-f49f-4291-b171-0a78ba13a887)
