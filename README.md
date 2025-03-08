@@ -17,12 +17,13 @@
 * opened `godot-4.3\godot-4.3\godot.sln`
 * click `local windows debugger` button then wait the build (long time ) 
 * ![image](https://github.com/user-attachments/assets/d4d30e42-8b0d-464f-ae33-bea145d8320f)
+* 
 
 
 ```mermaid
 
 graph LR
 
-wip
+godot4.3 --> visualstudio2022 
 
 ```
