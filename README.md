@@ -1,4 +1,5 @@
-* a fork of https://github.com/Orama-Interactive/Pixelorama
+* This is a fork of https://github.com/Orama-Interactive/Pixelorama
+* The purpose is just to learn how Pixelorama works and maybe I try to simplify the code for the feature that I don't need
 
 # Summary
 
