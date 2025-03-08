@@ -1,5 +1,5 @@
 * This is a fork of https://github.com/Orama-Interactive/Pixelorama
-* The purpose is just to learn how Pixelorama works and maybe I try to simplify the code for the feature that I don't need
+* The purpose is just to learn how Pixelorama works and maybe I try to simplify the code for the feature that I don't need for my personal use
 
 # Summary
 
