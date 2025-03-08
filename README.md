@@ -14,3 +14,5 @@
 * `pip install scons` to install scons 
 * `scons --version` to check scons
 * `scons platform=windows target=editor vsproj=yes verbose=yes`
+* opened `godot-4.3\godot-4.3\godot.sln`
+* 
