@@ -18,7 +18,8 @@
 * 
 
 ```mermaid
-graph UD
+
+graph LR
 
 wip
 
