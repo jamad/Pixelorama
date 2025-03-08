@@ -8,3 +8,9 @@
 
 * first run but got a problem
 * ![image](https://github.com/user-attachments/assets/0d00ea8f-f49f-4291-b171-0a78ba13a887)
+
+* so, tried to open it in v4.3 by downloading godot-4.3.zip 
+* then build by the following command
+* `pip install scons` to install scons 
+* `scons --version` to check scons
+* `scons platform=windows target=editor vsproj=yes verbose=yes`
