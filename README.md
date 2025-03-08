@@ -21,6 +21,9 @@
 * ![image](https://github.com/user-attachments/assets/3d032459-eeff-4951-a1e6-7c45e4e0e5fa)
 * clicked 2D mode, then ran the project
 * ![image](https://github.com/user-attachments/assets/0c341163-96c3-4d38-93fb-b22291c7599c)
+* then Pixelorama worked as expected
+* ![image](https://github.com/user-attachments/assets/e55905eb-58ad-4bd4-8ac6-5b5e3afb8586)
+
 
 
 
