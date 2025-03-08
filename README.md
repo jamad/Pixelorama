@@ -24,6 +24,6 @@
 
 graph LR
 
-scons[install scons by "pip install scons"] --> godot4.3 --> visualstudio2022 
+scons["install scons by <br>pip install scons"] --> godot4.3 --> visualstudio2022 
 
 ```
