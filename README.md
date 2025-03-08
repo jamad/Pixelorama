@@ -16,3 +16,9 @@
 * `scons platform=windows target=editor vsproj=yes verbose=yes`
 * opened `godot-4.3\godot-4.3\godot.sln`
 * 
+
+```mermaid
+
+wip
+
+```
