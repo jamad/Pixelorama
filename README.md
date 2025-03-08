@@ -17,7 +17,9 @@
 * opened `godot-4.3\godot-4.3\godot.sln`
 * click `local windows debugger` button then wait the build (long time ) 
 * ![image](https://github.com/user-attachments/assets/d4d30e42-8b0d-464f-ae33-bea145d8320f)
-* 
+* imported "Pixelorama-master\project.godot"
+* ![image](https://github.com/user-attachments/assets/3d032459-eeff-4951-a1e6-7c45e4e0e5fa)
+
 
 
 ```mermaid
