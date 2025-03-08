@@ -1,5 +1,22 @@
 * a fork of https://github.com/Orama-Interactive/Pixelorama
 
+# Summary
+
+```mermaid
+
+graph LR
+
+godot-4.3.zip -- extracted --> godot-4.3 --> scons_command -->  godot.sln --> visualstudio2022 -- build -->exe["bin/godot.windows.editor.x86_64.exe"]
+scons["install scons by <br>pip install scons"] --> scons_command
+
+godot-4.3 -->project.godot
+
+exe --import --> project.godot --> 2D --> run_Pixelorama 
+
+```
+
+
+
 # First, tested to open the file in v4.4
 * ![image](https://github.com/user-attachments/assets/11667a46-c6a0-4a63-9f9c-7f40455c049c)
 
@@ -26,17 +43,3 @@
 
 
 
-
-
-```mermaid
-
-graph LR
-
-godot-4.3.zip -- extracted --> godot-4.3 --> scons_command -->  godot.sln --> visualstudio2022 -- build -->exe["bin/godot.windows.editor.x86_64.exe"]
-scons["install scons by <br>pip install scons"] --> scons_command
-
-godot-4.3 -->project.godot
-
-exe --import --> project.godot --> 2D --> run_Pixelorama 
-
-```
