@@ -80,29 +80,7 @@ enum HelpMenu {
 
 const LANGUAGES_DICT := {
 	"en_US": ["English", "English"],
-	"cs_CZ": ["Czech", "Czech"],
-	"da_DK": ["Dansk", "Danish"],
-	"de_DE": ["Deutsch", "German"],
-	"el_GR": ["Ελληνικά", "Greek"],
-	"eo_UY": ["Esperanto", "Esperanto"],
-	"es_ES": ["Español", "Spanish"],
-	"fr_FR": ["Français", "French"],
-	"id_ID": ["Indonesian", "Indonesian"],
-	"it_IT": ["Italiano", "Italian"],
-	"lv_LV": ["Latvian", "Latvian"],
-	"pl_PL": ["Polski", "Polish"],
-	"pt_BR": ["Português Brasileiro", "Brazilian Portuguese"],
-	"pt_PT": ["Português", "Portuguese"],
-	"ru_RU": ["Русский", "Russian"],
-	"zh_CN": ["简体中文", "Chinese Simplified"],
-	"zh_TW": ["繁體中文", "Chinese Traditional"],
-	"nb_NO": ["Norsk Bokmål", "Norwegian Bokmål"],
-	"hu_HU": ["Magyar", "Hungarian"],
-	"ro_RO": ["Română", "Romanian"],
-	"ko_KR": ["한국어", "Korean"],
-	"tr_TR": ["Türkçe", "Turkish"],
 	"ja_JP": ["日本語", "Japanese"],
-	"uk_UA": ["Українська", "Ukrainian"],
 }
 
 ## The file path used for the [member config_cache] file.
