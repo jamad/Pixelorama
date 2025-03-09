@@ -97,16 +97,10 @@ var tools: Dictionary[String, Tool] = {
 		[],
 		"Resize the canvas"
 	),
-	"Move":
-	Tool.new(
-		"Move",
-		"Move",
-		"move",
-		"res://src/Tools/UtilityTools/Move.tscn",
-		[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP]
-	),
-	"Zoom": Tool.new("Zoom", "Zoom", "zoom", "res://src/Tools/UtilityTools/Zoom.tscn"),
-	"Pan": Tool.new("Pan", "Pan", "pan", "res://src/Tools/UtilityTools/Pan.tscn"),
+	
+	#"Move":Tool.new(		"Move",		"Move",		"move",		"res://src/Tools/UtilityTools/Move.tscn",		[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP]	),
+	#"Zoom": Tool.new("Zoom", "Zoom", "zoom", "res://src/Tools/UtilityTools/Zoom.tscn"),
+	#"Pan": Tool.new("Pan", "Pan", "pan", "res://src/Tools/UtilityTools/Pan.tscn"),
 	"Text":
 	Tool.new(
 		"Text",
