@@ -3,7 +3,7 @@
 
 ## saw the update based on godot4.4
 * [previously it did not work](https://github.com/jamad/Pixelorama/wiki/Old-info#first-tested-to-open-the-file-in-v44)
-* After fetching from upstream to forked repository and updating data, Pixelorame worked on godot v4.4 as expected
+* [After fetching from upstream to forked repository and updating data](https://github.com/jamad/Pixelorama/wiki/How-to-fetch-upstream-updates), Pixelorame worked on godot v4.4 as expected
 * ![image](https://github.com/user-attachments/assets/593d7546-46b7-4089-a679-921aa0ff76cb)
 
 ## Learning how to use Pixelorama
