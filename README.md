@@ -1,7 +1,7 @@
 * This is a fork of https://github.com/Orama-Interactive/Pixelorama
 * The purpose is just to learn how Pixelorama works and maybe I try to simplify the code for the feature that I don't need for my personal use
 
-## saw the update based on godot4.4, so will check if the following info got obsolete ...
+## saw the update based on godot4.4
 * [previously it did not work](https://github.com/jamad/Pixelorama/wiki/Old-info#first-tested-to-open-the-file-in-v44)
 * After fetching from upstream to forked repository and updating data, Pixelorame worked on godot v4.4 as expected
 * ![image](https://github.com/user-attachments/assets/593d7546-46b7-4089-a679-921aa0ff76cb)
