@@ -51,14 +51,10 @@ func _draw() -> void:
 	var d := Vector2(proj_size.x, proj_size.y).rotated(-Global.camera.rotation)  # Bottom right
 	transform.origin.x += minf(minf(a.x, b.x), minf(c.x, d.x)) * zoom
 
-	var basic_rule := 100.0
+	var basic_rule := 8
 	var i := 0
-	while basic_rule * zoom > 100:
-		basic_rule /= 5.0 if i % 2 else 2.0
-		i += 1
-	i = 0
-	while basic_rule * zoom < 100:
-		basic_rule *= 2.0 if i % 2 else 5.0
+	while basic_rule * zoom < 64:
+		basic_rule *= 2 
 		i += 1
 
 	ruler_transform = ruler_transform.scaled(Vector2(basic_rule, basic_rule))
