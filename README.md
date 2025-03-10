@@ -19,7 +19,7 @@ graph LR
 godot-4.4.zip -- extracted --> godot-4.4 --> Godot_v4.4-stable_win64.exe --import --> project.godot
 
 
-Pixelorama  --> project.godot --> 2D --> run_Pixelorama 
+Pixelorama  --> project.godot -- F5 --> run_Pixelorama 
 
 ```
 
