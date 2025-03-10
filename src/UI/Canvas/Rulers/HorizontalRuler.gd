@@ -89,7 +89,7 @@ func _draw() -> void:
 			draw_string(
 				font,
 				Vector2(pos.x + RULER_WIDTH + 2, font.get_height() - 4),
-				str(snappedf(val, 0.1)),
+				str(int(val)),
 				HORIZONTAL_ALIGNMENT_LEFT,
 				-1,
 				Themes.get_font_size()
