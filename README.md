@@ -17,12 +17,9 @@
 graph LR
 
 godot-4.4.zip -- extracted --> godot-4.4 --> Godot_v4.4-stable_win64.exe --import --> project.godot
-godot-4.3.zip -- extracted --> godot-4.3 --> scons_command -->  godot.sln --> visualstudio2022 -- build -->exe["bin/godot.windows.editor.x86_64.exe"]
-scons["install scons by <br>pip install scons"] --> scons_command
 
-Pixelorama -->project.godot
 
-exe --import --> project.godot --> 2D --> run_Pixelorama 
+Pixelorama  --> project.godot --> 2D --> run_Pixelorama 
 
 ```
 
