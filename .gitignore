@@ -26,3 +26,10 @@ mono_crash.*.json
 android/
 
 addons/godotsteam
+src/UI/UI.tscn
+src/UI/Timeline/AnimationTimeline.tscn
+src/Main.tscn
+assets/layouts/Tallscreen.tres
+assets/layouts/Default.tres
+addons/keychain/profiles/default.tres
+addons/aimg_io/apng_crc32.tres
