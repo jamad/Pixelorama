@@ -335,16 +335,14 @@ func _setup_view_menu() -> void:
 
 func _setup_tile_mode_submenu(item: String) -> void:
 	tile_mode_submenu.set_name("tile_mode_submenu")
-	tile_mode_submenu.add_radio_check_item("None", Tiles.MODE.NONE)
-	tile_mode_submenu.set_item_checked(Tiles.MODE.NONE, true)
 	tile_mode_submenu.add_radio_check_item("Tiled In Both Axis", Tiles.MODE.BOTH)
-	tile_mode_submenu.add_radio_check_item("Tiled In X Axis", Tiles.MODE.X_AXIS)
-	tile_mode_submenu.add_radio_check_item("Tiled In Y Axis", Tiles.MODE.Y_AXIS)
-	tile_mode_submenu.hide_on_checkable_item_selection = false
-
+	tile_mode_submenu.set_item_checked(Tiles.MODE.BOTH, true)
+	
 	tile_mode_submenu.id_pressed.connect(_tile_mode_submenu_id_pressed)
 	view_menu.add_child(tile_mode_submenu)
 	view_menu.add_submenu_item(item, tile_mode_submenu.get_name())
+
+	#_tile_mode_submenu_id_pressed(Tiles.MODE.BOTH)
 
 
 func _setup_snap_to_submenu(item: String) -> void:
