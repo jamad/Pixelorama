@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bsgwar3l6qtgv"]
 
-[ext_resource type="Script" uid="uid://tfdhqto6j5j0" path="res://src/UI/Nodes/Sliders/ValueSlider.gd" id="1"]
+[ext_resource type="Script" uid="uid://iuln2vtwjq5u" path="res://src/UI/Nodes/Sliders/ValueSlider.gd" id="1"]
 [ext_resource type="Script" uid="uid://bw54cqc214ur8" path="res://src/UI/TopMenuContainer/TopMenuContainer.gd" id="2"]
 
 [node name="TopMenuContainer" type="Panel"]
@@ -78,9 +78,9 @@ size_flags_vertical = 4
 focus_mode = 2
 mouse_default_cursor_shape = 2
 theme_type_variation = &"ValueSlider"
-min_value = 1.0
+min_value = 100.0
 max_value = 5000.0
-value = 50.0
+value = 100.0
 allow_greater = true
 nine_patch_stretch = true
 stretch_margin_left = 3
