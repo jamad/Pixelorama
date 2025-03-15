@@ -212,8 +212,8 @@ func _rotation_changed() -> void:
 
 
 func _zoom_slider_value_changed(value: float) -> void:
-	if value <= 0:
-		value = 1
+	if value < 100:
+		value = 100
 	var new_zoom := Vector2(value, value) / 100.0
 	if zoom.is_equal_approx(new_zoom):
 		return
