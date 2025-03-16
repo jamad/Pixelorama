@@ -44,6 +44,8 @@ var brush_size_max := 4
 
 var tools: Dictionary[String, Tool] = {
 
+
+
 	"Pencil":
 	Tool.new(
 		"Pencil",
@@ -65,6 +67,22 @@ var tools: Dictionary[String, Tool] = {
 		["draw_create_line"]
 	),
 	
+	"LineTool":
+	(
+		Tool
+		. new(
+			"LineTool",
+			"Line Tool",
+			"linetool",
+			"res://src/Tools/DesignTools/LineTool.tscn",
+			[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP],
+			"""Hold %s to snap the angle of the line
+Hold %s to center the shape on the click origin
+Hold %s to displace the shape's origin""",
+			["shape_perfect", "shape_center", "shape_displace"]
+		)
+	),
+	
 	"RectSelect":
 	Tool.new(
 		"RectSelect",
@@ -83,7 +101,7 @@ var tools: Dictionary[String, Tool] = {
 	Tool.new(
 		"MagicWand", "Magic Wand", "magic_wand", "res://src/Tools/SelectionTools/MagicWand.tscn"
 	),	
-	"Zoom": Tool.new("Zoom", "Zoom", "zoom", "res://src/Tools/UtilityTools/Zoom.tscn"),
+	#"Zoom": Tool.new("Zoom", "Zoom", "zoom", "res://src/Tools/UtilityTools/Zoom.tscn"),
 	"Pan": Tool.new("Pan", "Pan", "pan", "res://src/Tools/UtilityTools/Pan.tscn"),
 	"Text":
 	Tool.new(
@@ -119,38 +137,8 @@ var tools: Dictionary[String, Tool] = {
 		"res://src/Tools/DesignTools/Shading.tscn",
 		[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP]
 	),
-	"LineTool":
-	(
-		Tool
-		. new(
-			"LineTool",
-			"Line Tool",
-			"linetool",
-			"res://src/Tools/DesignTools/LineTool.tscn",
-			[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP],
-			"""Hold %s to snap the angle of the line
-Hold %s to center the shape on the click origin
-Hold %s to displace the shape's origin""",
-			["shape_perfect", "shape_center", "shape_displace"]
-		)
-	),
-	"CurveTool":
-	(
-		Tool
-		. new(
-			"CurveTool",
-			"Curve Tool",
-			"curvetool",
-			"res://src/Tools/DesignTools/CurveTool.tscn",
-			[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP],
-			"""Draws bezier curves
-Press %s/%s to add new points
-Double-click to finish drawing the curve
-Press and drag to control the curvature
-Press %s to remove the last added point""",
-			["activate_left_tool", "activate_right_tool", "change_tool_mode"]
-		)
-	),
+
+	
 	"RectangleTool":
 	(
 		Tool
