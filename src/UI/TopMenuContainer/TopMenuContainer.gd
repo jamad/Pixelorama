@@ -245,7 +245,7 @@ func _setup_view_menu() -> void:
 	var view_menu_items := {
 		"Center Canvas": "center_canvas",
 		"Tile Mode": "",
-		#"Tile Mode Offsets": "",
+		"Tile Mode Offsets": "",
 		"Grayscale View": "",
 		"Mirror View": "mirror_view",
 		"Show Grid": "show_grid",
@@ -258,6 +258,7 @@ func _setup_view_menu() -> void:
 		"Display Layer Effects": &"display_layer_effects",
 		"Snap To": "",
 	}
+	
 	for i in view_menu_items.size():
 		var item: String = view_menu_items.keys()[i]
 		if item == "Tile Mode":
@@ -270,6 +271,7 @@ func _setup_view_menu() -> void:
 			_set_menu_shortcut(view_menu_items[item], view_menu, i, item)
 		else:
 			_set_menu_shortcut(view_menu_items[item], view_menu, i, item, true)
+
 	view_menu.set_item_checked(Global.ViewMenu.SHOW_RULERS, true)
 	view_menu.set_item_checked(Global.ViewMenu.SHOW_GUIDES, true)
 	view_menu.set_item_checked(Global.ViewMenu.SHOW_REFERENCE_IMAGES, true)
