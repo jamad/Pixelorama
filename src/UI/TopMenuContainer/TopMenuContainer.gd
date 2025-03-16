@@ -770,10 +770,8 @@ func window_menu_id_pressed(id: int) -> void:
 
 
 func _tile_mode_submenu_id_pressed(id: Tiles.MODE) -> void:
-	Global.current_project.tiles.mode = id
+	Global.current_project.tiles.mode = Tiles.MODE.BOTH
 	Global.transparent_checker.fit_rect(Global.current_project.tiles.get_bounding_rect())
-	for i in Tiles.MODE.values():
-		tile_mode_submenu.set_item_checked(i, i == id)
 	Global.canvas.tile_mode.queue_redraw()
 	Global.canvas.pixel_grid.queue_redraw()
 	Global.canvas.grid.queue_redraw()
