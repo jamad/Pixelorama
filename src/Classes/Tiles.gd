@@ -20,28 +20,7 @@ func _init(size: Vector2i) -> void:
 
 
 func get_bounding_rect() -> Rect2i:
-	match mode:
-		MODE.BOTH:
-			var diagonal := x_basis + y_basis
-			var cross_diagonal := x_basis - y_basis
-			var bounding_rect := Rect2i(-diagonal, Vector2.ZERO)
-			bounding_rect = bounding_rect.expand(diagonal)
-			bounding_rect = bounding_rect.expand(-cross_diagonal)
-			bounding_rect = bounding_rect.expand(cross_diagonal)
-			bounding_rect = bounding_rect.grow_individual(0, 0, tile_size.x, tile_size.y)
-			return bounding_rect
-		MODE.X_AXIS:
-			var bounding_rect := Rect2i(-x_basis, Vector2.ZERO)
-			bounding_rect = bounding_rect.expand(x_basis)
-			bounding_rect = bounding_rect.grow_individual(0, 0, tile_size.x, tile_size.y)
-			return bounding_rect
-		MODE.Y_AXIS:
-			var bounding_rect := Rect2i(-y_basis, Vector2.ZERO)
-			bounding_rect = bounding_rect.expand(y_basis)
-			bounding_rect = bounding_rect.grow_individual(0, 0, tile_size.x, tile_size.y)
-			return bounding_rect
-		_:
-			return Rect2i(Vector2i.ZERO, tile_size)
+	return Rect2i(Vector2i.ZERO, tile_size)
 
 
 func get_nearest_tile(point: Vector2i) -> Rect2i:
