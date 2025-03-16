@@ -43,82 +43,7 @@ var brush_size_min := 1
 var brush_size_max := 4
 
 var tools: Dictionary[String, Tool] = {
-	"RectSelect":
-	Tool.new(
-		"RectSelect",
-		"Rectangular Selection",
-		"rectangle_select",
-		"res://src/Tools/SelectionTools/RectSelect.tscn"
-	),
-	"EllipseSelect":
-	Tool.new(
-		"EllipseSelect",
-		"Elliptical Selection",
-		"ellipse_select",
-		"res://src/Tools/SelectionTools/EllipseSelect.tscn"
-	),
-	"PolygonSelect":
-	Tool.new(
-		"PolygonSelect",
-		"Polygonal Selection",
-		"polygon_select",
-		"res://src/Tools/SelectionTools/PolygonSelect.tscn",
-		[],
-		"Double-click to connect the last point to the starting point"
-	),
-	"ColorSelect":
-	Tool.new(
-		"ColorSelect",
-		"Select By Color",
-		"color_select",
-		"res://src/Tools/SelectionTools/ColorSelect.tscn"
-	),
-	"MagicWand":
-	Tool.new(
-		"MagicWand", "Magic Wand", "magic_wand", "res://src/Tools/SelectionTools/MagicWand.tscn"
-	),
-	"Lasso":
-	Tool.new(
-		"Lasso", "Lasso / Free Select Tool", "lasso", "res://src/Tools/SelectionTools/Lasso.tscn"
-	),
-	"PaintSelect":
-	Tool.new(
-		"PaintSelect",
-		"Select by Drawing",
-		"paint_selection",
-		"res://src/Tools/SelectionTools/PaintSelect.tscn"
-	),
-	"Crop":
-	Tool.new(
-		"Crop",
-		"Crop",
-		"crop",
-		"res://src/Tools/UtilityTools/CropTool.tscn",
-		[],
-		"Resize the canvas"
-	),
-	
-	"Move":Tool.new(		"Move",		"Move",		"move",		"res://src/Tools/UtilityTools/Move.tscn",		[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP]	),
-	"Zoom": Tool.new("Zoom", "Zoom", "zoom", "res://src/Tools/UtilityTools/Zoom.tscn"),
-	"Pan": Tool.new("Pan", "Pan", "pan", "res://src/Tools/UtilityTools/Pan.tscn"),
-	"Text":
-	Tool.new(
-		"Text",
-		"Text",
-		"text",
-		"res://src/Tools/UtilityTools/Text.tscn",
-		[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP],
-		""
-	),
-	"ColorPicker":
-	Tool.new(
-		"ColorPicker",
-		"Color Picker",
-		"colorpicker",
-		"res://src/Tools/UtilityTools/ColorPicker.tscn",
-		[],
-		"Select a color from a pixel of the sprite"
-	),
+
 	"Pencil":
 	Tool.new(
 		"Pencil",
@@ -138,6 +63,45 @@ var tools: Dictionary[String, Tool] = {
 		[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP],
 		"Hold %s to make a line",
 		["draw_create_line"]
+	),
+	
+	"RectSelect":
+	Tool.new(
+		"RectSelect",
+		"Rectangular Selection",
+		"rectangle_select",
+		"res://src/Tools/SelectionTools/RectSelect.tscn"
+	),
+	"ColorSelect":
+	Tool.new(
+		"ColorSelect",
+		"Select By Color",
+		"color_select",
+		"res://src/Tools/SelectionTools/ColorSelect.tscn"
+	),
+	"MagicWand":
+	Tool.new(
+		"MagicWand", "Magic Wand", "magic_wand", "res://src/Tools/SelectionTools/MagicWand.tscn"
+	),	
+	"Zoom": Tool.new("Zoom", "Zoom", "zoom", "res://src/Tools/UtilityTools/Zoom.tscn"),
+	"Pan": Tool.new("Pan", "Pan", "pan", "res://src/Tools/UtilityTools/Pan.tscn"),
+	"Text":
+	Tool.new(
+		"Text",
+		"Text",
+		"text",
+		"res://src/Tools/UtilityTools/Text.tscn",
+		[Global.LayerTypes.PIXEL, Global.LayerTypes.TILEMAP],
+		""
+	),
+	"ColorPicker":
+	Tool.new(
+		"ColorPicker",
+		"Color Picker",
+		"colorpicker",
+		"res://src/Tools/UtilityTools/ColorPicker.tscn",
+		[],
+		"Select a color from a pixel of the sprite"
 	),
 	"Bucket":
 	Tool.new(
