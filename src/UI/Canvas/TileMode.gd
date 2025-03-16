@@ -1,7 +1,6 @@
 extends Node2D
 
 var tiles: Tiles
-var draw_center := false
 
 @onready var canvas := Global.canvas
 
@@ -26,16 +25,11 @@ func _draw() -> void:
 
 
 func get_tile_positions() -> Array[Vector2i]:
-	var defaulted_tiles := tiles
-	if defaulted_tiles == null:
-		defaulted_tiles = Global.current_project.tiles
-
-	var x_basis := defaulted_tiles.x_basis
-	var y_basis := defaulted_tiles.y_basis
+	var defaulted_tiles = Global.current_project.tiles
 
 	var positions: Array[Vector2i] = []
 	for r in range(-2, 3) :
 		for c in range(-2, 3) :
-			if not draw_center and r == 0 and c == 0:				continue
-			positions.append(r * y_basis + c * x_basis)
+			if r or c:
+				positions.append(r * defaulted_tiles.y_basis + c * defaulted_tiles.x_basis)
 	return positions
