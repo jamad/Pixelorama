@@ -32,10 +32,6 @@ func _on_TileModeOffsetsDialog_about_to_show() -> void:
 	tile_mode.draw_center = true
 	tile_mode.tiles = Tiles.new(Global.current_project.size)
 	tile_mode.tiles.mode = Tiles.MODE.BOTH
-	if Global.current_project.tiles.mode != Tiles.MODE.NONE:
-		tile_mode.tiles.mode = Global.current_project.tiles.mode
-	if Global.current_project.tiles.mode != Tiles.MODE.NONE:
-		tile_mode.tiles.mode = Global.current_project.tiles.mode
 	tile_mode.tiles.x_basis = Global.current_project.tiles.x_basis
 	tile_mode.tiles.y_basis = Global.current_project.tiles.y_basis
 	x_basis.value = tile_mode.tiles.x_basis
@@ -108,18 +104,11 @@ func _on_Reset_pressed() -> void:
 	update_preview()
 
 
-func _on_isometric_pressed() -> void:
-	tile_mode.tiles.x_basis = Global.current_project.size / 2
-	tile_mode.tiles.x_basis.y *= -1
-	tile_mode.tiles.y_basis = Global.current_project.size / 2
-	x_basis.value = tile_mode.tiles.x_basis
-	y_basis.value = tile_mode.tiles.y_basis
-	update_preview()
+func _on_isometric_pressed() -> void:pass 
 
 
 func change_mask() -> void:
-	if Global.current_project.tiles.mode == Tiles.MODE.NONE:
-		return
+	#if Global.current_project.tiles.mode == Tiles.MODE.NONE:		return
 	var frame_idx := Global.current_project.current_frame
 	var current_frame := Global.current_project.frames[frame_idx]
 	var tiles := Global.current_project.tiles
