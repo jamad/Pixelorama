@@ -245,7 +245,7 @@ func _setup_view_menu() -> void:
 	var view_menu_items := {
 		"Center Canvas": "center_canvas",
 		"Tile Mode": "",
-		"Tile Mode Offsets": "",
+		#"Tile Mode Offsets": "",
 		"Grayscale View": "",
 		"Mirror View": "mirror_view",
 		"Show Grid": "show_grid",
