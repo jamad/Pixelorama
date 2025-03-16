@@ -32,19 +32,10 @@ func get_tile_positions() -> Array[Vector2i]:
 
 	var x_basis := defaulted_tiles.x_basis
 	var y_basis := defaulted_tiles.y_basis
-	var tile_mode := defaulted_tiles.mode
 
-	var x_range := (
-		range(-2, 3) 
-	)
-	var y_range := (
-		range(-2, 3) 
-	)
 	var positions: Array[Vector2i] = []
-	for r in y_range:
-		for c in x_range:
-			if not draw_center and r == 0 and c == 0:
-				continue
-			var pos: Vector2i = r * y_basis + c * x_basis
-			positions.append(pos)
+	for r in range(-2, 3) :
+		for c in range(-2, 3) :
+			if not draw_center and r == 0 and c == 0:				continue
+			positions.append(r * y_basis + c * x_basis)
 	return positions
