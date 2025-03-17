@@ -1,5 +1,5 @@
 * This is a fork of https://github.com/Orama-Interactive/Pixelorama
-* The purpose is just to learn how Pixelorama works and maybe I try to simplify the code for the feature that I don't need for my personal use
+* The purpose is for me to learn Pixelorama and then to remove the features that I don't need
   * ex. ![image](https://github.com/user-attachments/assets/7097e3ca-8a36-49c9-8839-a47967d2b498) from [this note](https://github.com/jamad/Pixelorama/wiki/How-I-changed-UI-in-the-fork)
 
 
